@@ -15,7 +15,7 @@ struct ContentView: View {
             ZStack{
                 Color.vanilla
                     .ignoresSafeArea()
-                Text("Hello, \($name)")
+                Text("Hello, \(name)")
                 
                 
             }//Zstack
