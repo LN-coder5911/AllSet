@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginViewName: View {
     
-    @State var name = ""
+    @Binding var name = ""
     
     var body: some View {
 
@@ -45,6 +45,21 @@ struct LoginViewName: View {
                         .background(.black.opacity(0.05))
                         .cornerRadius(15)
                         .padding()
+                    
+                    Button {
+                        
+                        ContentView()
+                        
+                    } label: {
+                        
+                        Text("Next")
+                            .padding()
+                            .foregroundColor(Color("vanilla"))
+                            .frame(width: 300, height: 50)
+                            .background(Color("lightgreen"))
+                            .cornerRadius(15)
+                        
+                    }//button
                     
                 }//vstack
                 
